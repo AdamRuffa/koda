@@ -23,6 +23,8 @@ check.h
 -
 stdlib.h
 -
+stdbool.h
+-
 ../koda/math/kmath.h
 /Users/adam/CLionProjects/koda/src/koda/math/kmath.h
 

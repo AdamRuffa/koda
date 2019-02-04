@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/adam/CLionProjects/koda/src/koda/math/calc.c
-kmath.h
-/Users/adam/CLionProjects/koda/src/koda/math/kmath.h
-
-/Users/adam/CLionProjects/koda/src/koda/math/kmath.h
-../types/kodat.h
-/Users/adam/CLionProjects/koda/src/koda/types/kodat.h
-
 /Users/adam/CLionProjects/koda/src/koda/types/hash.c
 kodat.h
 /Users/adam/CLionProjects/koda/src/koda/types/kodat.h
@@ -23,8 +15,4 @@ complex.h
 -
 sys/types.h
 -
-
-/Users/adam/CLionProjects/koda/src/koda/types/set.c
-kodat.h
-/Users/adam/CLionProjects/koda/src/koda/types/kodat.h
 

@@ -21,6 +21,11 @@ inline int log2_u64(u_int64_t l) {
     return log;
 }
 
+typedef union {
+    double d;
+    hashcode l;
+} ld64;
+
 inline int pr(u_int64_t group) {
     group%=HASHPRIMES;
     int g = 0,
@@ -33,10 +38,14 @@ inline int pr(u_int64_t group) {
 }
 
 inline hashcode hash_cdouble(cdouble c, u_int64_t group) {
-    u_int32_t lor = (u_int32_t)creal(c);
-    u_int32_t hir = (u_int32_t)((hashcode)creal(c)>>32);
-    u_int32_t loc = (u_int32_t)cimag(c);
-    u_int32_t hic = (u_int32_t)((hashcode)cimag(c)>>32);
+    ld64 _lor = {creal(c)};
+    ld64 _loc = {creal(c)};
+    ld64 _hir = {cimag(c)};
+    ld64 _hic = {cimag(c)};
+    u_int32_t lor = (u_int32_t)(_lor.l & 0xFFFFFFFFL);
+    u_int32_t hir = (u_int32_t)(_hir.l >> 32);
+    u_int32_t loc = (u_int32_t)(_loc.l & 0xFFFFFFFFL);
+    u_int32_t hic = (u_int32_t)(_hic.l >> 32);
     return ((hashcode)(pr(group) * lor ^ pr(group + 1) * hic) << 32)
         ^   (hashcode)(pr(group + 2) * hir ^ pr(group + 3) * loc);
 }
@@ -44,11 +53,12 @@ inline hashcode hash_cdouble(cdouble c, u_int64_t group) {
 
 hashcode hash_kpointset(kpointset*sp) {
     hashcode acc = 0L;
-    int size = (log2_u64(sp->size)<<2)|1;
+    int size = log2_u64(sp->size);
     for(u_int64_t i = 0; i < sp->size; i += size) {
         acc ^= hash_cdouble(sp->set[i], i);
     }
-    return acc ^ (hashcode)sp->granularity;
+    ld64 g = {sp->granularity};
+    return acc ^ g.l ^ (hashcode)sp->size;
 }
 
 
