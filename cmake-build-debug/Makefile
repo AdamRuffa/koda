@@ -163,6 +163,87 @@ src/koda/math/calc.c.s:
 	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/math/calc.c.s
 .PHONY : src/koda/math/calc.c.s
 
+src/koda/types/hash.o: src/koda/types/hash.c.o
+
+.PHONY : src/koda/types/hash.o
+
+# target to build an object file
+src/koda/types/hash.c.o:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/hash.c.o
+.PHONY : src/koda/types/hash.c.o
+
+src/koda/types/hash.i: src/koda/types/hash.c.i
+
+.PHONY : src/koda/types/hash.i
+
+# target to preprocess a source file
+src/koda/types/hash.c.i:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/hash.c.i
+.PHONY : src/koda/types/hash.c.i
+
+src/koda/types/hash.s: src/koda/types/hash.c.s
+
+.PHONY : src/koda/types/hash.s
+
+# target to generate assembly for a file
+src/koda/types/hash.c.s:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/hash.c.s
+.PHONY : src/koda/types/hash.c.s
+
+src/koda/types/set.o: src/koda/types/set.c.o
+
+.PHONY : src/koda/types/set.o
+
+# target to build an object file
+src/koda/types/set.c.o:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/set.c.o
+.PHONY : src/koda/types/set.c.o
+
+src/koda/types/set.i: src/koda/types/set.c.i
+
+.PHONY : src/koda/types/set.i
+
+# target to preprocess a source file
+src/koda/types/set.c.i:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/set.c.i
+.PHONY : src/koda/types/set.c.i
+
+src/koda/types/set.s: src/koda/types/set.c.s
+
+.PHONY : src/koda/types/set.s
+
+# target to generate assembly for a file
+src/koda/types/set.c.s:
+	$(MAKE) -f CMakeFiles/koda.dir/build.make CMakeFiles/koda.dir/src/koda/types/set.c.s
+.PHONY : src/koda/types/set.c.s
+
+src/test/main.o: src/test/main.c.o
+
+.PHONY : src/test/main.o
+
+# target to build an object file
+src/test/main.c.o:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/main.c.o
+.PHONY : src/test/main.c.o
+
+src/test/main.i: src/test/main.c.i
+
+.PHONY : src/test/main.i
+
+# target to preprocess a source file
+src/test/main.c.i:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/main.c.i
+.PHONY : src/test/main.c.i
+
+src/test/main.s: src/test/main.c.s
+
+.PHONY : src/test/main.s
+
+# target to generate assembly for a file
+src/test/main.c.s:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/main.c.s
+.PHONY : src/test/main.c.s
+
 src/test/math.o: src/test/math.c.o
 
 .PHONY : src/test/math.o
@@ -190,6 +271,33 @@ src/test/math.c.s:
 	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/math.c.s
 .PHONY : src/test/math.c.s
 
+src/test/types.o: src/test/types.c.o
+
+.PHONY : src/test/types.o
+
+# target to build an object file
+src/test/types.c.o:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/types.c.o
+.PHONY : src/test/types.c.o
+
+src/test/types.i: src/test/types.c.i
+
+.PHONY : src/test/types.i
+
+# target to preprocess a source file
+src/test/types.c.i:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/types.c.i
+.PHONY : src/test/types.c.i
+
+src/test/types.s: src/test/types.c.s
+
+.PHONY : src/test/types.s
+
+# target to generate assembly for a file
+src/test/types.c.s:
+	$(MAKE) -f CMakeFiles/unittest-koda.dir/build.make CMakeFiles/unittest-koda.dir/src/test/types.c.s
+.PHONY : src/test/types.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,9 +311,21 @@ help:
 	@echo "... src/koda/math/calc.o"
 	@echo "... src/koda/math/calc.i"
 	@echo "... src/koda/math/calc.s"
+	@echo "... src/koda/types/hash.o"
+	@echo "... src/koda/types/hash.i"
+	@echo "... src/koda/types/hash.s"
+	@echo "... src/koda/types/set.o"
+	@echo "... src/koda/types/set.i"
+	@echo "... src/koda/types/set.s"
+	@echo "... src/test/main.o"
+	@echo "... src/test/main.i"
+	@echo "... src/test/main.s"
 	@echo "... src/test/math.o"
 	@echo "... src/test/math.i"
 	@echo "... src/test/math.s"
+	@echo "... src/test/types.o"
+	@echo "... src/test/types.i"
+	@echo "... src/test/types.s"
 .PHONY : help
 
 

@@ -137,13 +137,31 @@
 		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/math/calc.c">
 			<Option target="koda"/>
 		</Unit>
-		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/math/calc.h">
-			<Option target="koda"/>
-		</Unit>
 		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/math/kmath.h">
 			<Option target="koda"/>
 		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/types/hash.c">
+			<Option target="koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/types/kodat.h">
+			<Option target="koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/koda/types/set.c">
+			<Option target="koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/test/main.c">
+			<Option target="unittest-koda"/>
+		</Unit>
 		<Unit filename="/Users/adam/CLionProjects/koda/src/test/math.c">
+			<Option target="unittest-koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/test/math.h">
+			<Option target="unittest-koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/test/types.c">
+			<Option target="unittest-koda"/>
+		</Unit>
+		<Unit filename="/Users/adam/CLionProjects/koda/src/test/types.h">
 			<Option target="unittest-koda"/>
 		</Unit>
 		<Unit filename="/Users/adam/CLionProjects/koda/CMakeLists.txt">

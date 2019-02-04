@@ -57,9 +57,22 @@ include CMakeFiles/unittest-koda.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/unittest-koda.dir/flags.make
 
+CMakeFiles/unittest-koda.dir/src/test/main.c.o: CMakeFiles/unittest-koda.dir/flags.make
+CMakeFiles/unittest-koda.dir/src/test/main.c.o: ../src/test/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/unittest-koda.dir/src/test/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unittest-koda.dir/src/test/main.c.o   -c /Users/adam/CLionProjects/koda/src/test/main.c
+
+CMakeFiles/unittest-koda.dir/src/test/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unittest-koda.dir/src/test/main.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adam/CLionProjects/koda/src/test/main.c > CMakeFiles/unittest-koda.dir/src/test/main.c.i
+
+CMakeFiles/unittest-koda.dir/src/test/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unittest-koda.dir/src/test/main.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/test/main.c -o CMakeFiles/unittest-koda.dir/src/test/main.c.s
+
 CMakeFiles/unittest-koda.dir/src/test/math.c.o: CMakeFiles/unittest-koda.dir/flags.make
 CMakeFiles/unittest-koda.dir/src/test/math.c.o: ../src/test/math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/unittest-koda.dir/src/test/math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/unittest-koda.dir/src/test/math.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unittest-koda.dir/src/test/math.c.o   -c /Users/adam/CLionProjects/koda/src/test/math.c
 
 CMakeFiles/unittest-koda.dir/src/test/math.c.i: cmake_force
@@ -70,19 +83,36 @@ CMakeFiles/unittest-koda.dir/src/test/math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unittest-koda.dir/src/test/math.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/test/math.c -o CMakeFiles/unittest-koda.dir/src/test/math.c.s
 
+CMakeFiles/unittest-koda.dir/src/test/types.c.o: CMakeFiles/unittest-koda.dir/flags.make
+CMakeFiles/unittest-koda.dir/src/test/types.c.o: ../src/test/types.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/unittest-koda.dir/src/test/types.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unittest-koda.dir/src/test/types.c.o   -c /Users/adam/CLionProjects/koda/src/test/types.c
+
+CMakeFiles/unittest-koda.dir/src/test/types.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unittest-koda.dir/src/test/types.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adam/CLionProjects/koda/src/test/types.c > CMakeFiles/unittest-koda.dir/src/test/types.c.i
+
+CMakeFiles/unittest-koda.dir/src/test/types.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unittest-koda.dir/src/test/types.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/test/types.c -o CMakeFiles/unittest-koda.dir/src/test/types.c.s
+
 # Object files for target unittest-koda
 unittest__koda_OBJECTS = \
-"CMakeFiles/unittest-koda.dir/src/test/math.c.o"
+"CMakeFiles/unittest-koda.dir/src/test/main.c.o" \
+"CMakeFiles/unittest-koda.dir/src/test/math.c.o" \
+"CMakeFiles/unittest-koda.dir/src/test/types.c.o"
 
 # External object files for target unittest-koda
 unittest__koda_EXTERNAL_OBJECTS =
 
+unittest-koda: CMakeFiles/unittest-koda.dir/src/test/main.c.o
 unittest-koda: CMakeFiles/unittest-koda.dir/src/test/math.c.o
+unittest-koda: CMakeFiles/unittest-koda.dir/src/test/types.c.o
 unittest-koda: CMakeFiles/unittest-koda.dir/build.make
 unittest-koda: libkoda.a
 unittest-koda: /usr/local/lib/libcheck.dylib
 unittest-koda: CMakeFiles/unittest-koda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable unittest-koda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable unittest-koda"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unittest-koda.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

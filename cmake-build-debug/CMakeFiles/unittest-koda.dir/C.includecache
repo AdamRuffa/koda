@@ -13,8 +13,10 @@
 /Users/adam/CLionProjects/koda/src/koda/types/kodat.h
 complex.h
 -
+sys/types.h
+-
 
-/Users/adam/CLionProjects/koda/src/test/math.c
+/Users/adam/CLionProjects/koda/src/test/types.c
 stdio.h
 -
 check.h

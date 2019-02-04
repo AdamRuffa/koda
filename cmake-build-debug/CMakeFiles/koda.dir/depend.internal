@@ -5,3 +5,9 @@ CMakeFiles/koda.dir/src/koda/math/calc.c.o
  /Users/adam/CLionProjects/koda/src/koda/math/calc.c
  /Users/adam/CLionProjects/koda/src/koda/math/kmath.h
  /Users/adam/CLionProjects/koda/src/koda/types/kodat.h
+CMakeFiles/koda.dir/src/koda/types/hash.c.o
+ /Users/adam/CLionProjects/koda/src/koda/types/hash.c
+ /Users/adam/CLionProjects/koda/src/koda/types/kodat.h
+CMakeFiles/koda.dir/src/koda/types/set.c.o
+ /Users/adam/CLionProjects/koda/src/koda/types/kodat.h
+ /Users/adam/CLionProjects/koda/src/koda/types/set.c

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/unittest-koda.dir/src/test/main.c.o"
   "CMakeFiles/unittest-koda.dir/src/test/math.c.o"
+  "CMakeFiles/unittest-koda.dir/src/test/types.c.o"
   "unittest-koda.pdb"
   "unittest-koda"
 )

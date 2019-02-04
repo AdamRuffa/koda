@@ -70,17 +70,47 @@ CMakeFiles/koda.dir/src/koda/math/calc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/koda.dir/src/koda/math/calc.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/koda/math/calc.c -o CMakeFiles/koda.dir/src/koda/math/calc.c.s
 
+CMakeFiles/koda.dir/src/koda/types/hash.c.o: CMakeFiles/koda.dir/flags.make
+CMakeFiles/koda.dir/src/koda/types/hash.c.o: ../src/koda/types/hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/koda.dir/src/koda/types/hash.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/koda.dir/src/koda/types/hash.c.o   -c /Users/adam/CLionProjects/koda/src/koda/types/hash.c
+
+CMakeFiles/koda.dir/src/koda/types/hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/koda.dir/src/koda/types/hash.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adam/CLionProjects/koda/src/koda/types/hash.c > CMakeFiles/koda.dir/src/koda/types/hash.c.i
+
+CMakeFiles/koda.dir/src/koda/types/hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/koda.dir/src/koda/types/hash.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/koda/types/hash.c -o CMakeFiles/koda.dir/src/koda/types/hash.c.s
+
+CMakeFiles/koda.dir/src/koda/types/set.c.o: CMakeFiles/koda.dir/flags.make
+CMakeFiles/koda.dir/src/koda/types/set.c.o: ../src/koda/types/set.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/koda.dir/src/koda/types/set.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/koda.dir/src/koda/types/set.c.o   -c /Users/adam/CLionProjects/koda/src/koda/types/set.c
+
+CMakeFiles/koda.dir/src/koda/types/set.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/koda.dir/src/koda/types/set.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adam/CLionProjects/koda/src/koda/types/set.c > CMakeFiles/koda.dir/src/koda/types/set.c.i
+
+CMakeFiles/koda.dir/src/koda/types/set.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/koda.dir/src/koda/types/set.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adam/CLionProjects/koda/src/koda/types/set.c -o CMakeFiles/koda.dir/src/koda/types/set.c.s
+
 # Object files for target koda
 koda_OBJECTS = \
-"CMakeFiles/koda.dir/src/koda/math/calc.c.o"
+"CMakeFiles/koda.dir/src/koda/math/calc.c.o" \
+"CMakeFiles/koda.dir/src/koda/types/hash.c.o" \
+"CMakeFiles/koda.dir/src/koda/types/set.c.o"
 
 # External object files for target koda
 koda_EXTERNAL_OBJECTS =
 
 libkoda.a: CMakeFiles/koda.dir/src/koda/math/calc.c.o
+libkoda.a: CMakeFiles/koda.dir/src/koda/types/hash.c.o
+libkoda.a: CMakeFiles/koda.dir/src/koda/types/set.c.o
 libkoda.a: CMakeFiles/koda.dir/build.make
 libkoda.a: CMakeFiles/koda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libkoda.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libkoda.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/koda.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/koda.dir/link.txt --verbose=$(VERBOSE)
 

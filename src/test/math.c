@@ -11,7 +11,7 @@ START_TEST(dx_test) {
     kpointset c = {
         16,
         1.0,
-        calloc(16, sizeof(_Complex double))
+        calloc(16, sizeof(cdouble))
     };
     for(int i = 0; i < 16; i++) {
         c.set[i] = i + i*I;
@@ -30,12 +30,3 @@ Suite*math_tsuite(void) {
     return s;
 }
 
-int main(int argc, char**argv) {
-    int failed;
-    Suite*s=math_tsuite();
-    SRunner*sr=srunner_create(s);
-    srunner_run_all(sr, CK_NORMAL);
-    failed = srunner_ntests_failed(sr);
-    srunner_free(sr);
-    return !failed ? EXIT_SUCCESS : EXIT_FAILURE;
-}

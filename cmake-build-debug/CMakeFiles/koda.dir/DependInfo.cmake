@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/adam/CLionProjects/koda/src/koda/math/calc.c" "/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/koda.dir/src/koda/math/calc.c.o"
+  "/Users/adam/CLionProjects/koda/src/koda/types/hash.c" "/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/koda.dir/src/koda/types/hash.c.o"
+  "/Users/adam/CLionProjects/koda/src/koda/types/set.c" "/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/koda.dir/src/koda/types/set.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

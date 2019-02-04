@@ -6,11 +6,16 @@
 #define KODA_KODAT_H
 
 #include <complex.h>
+#include <sys/types.h>
+
+typedef u_quad_t hashcode;
+typedef _Complex double cdouble;
 
 typedef struct {
    long long size;
    double granularity;
-   _Complex double*set;
+   cdouble*set;
 } kpointset;
+inline hashcode hash_kpointset(kpointset*sp);
 
 #endif //KODA_KODAT_H
