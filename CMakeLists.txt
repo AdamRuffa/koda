@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 project(koda C)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Ofast -Wall -Wextra")
 
 file(GLOB_RECURSE koda-sources src/koda/*.[c|h])
 add_library(koda ${koda-sources})

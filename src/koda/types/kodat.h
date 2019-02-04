@@ -8,14 +8,14 @@
 #include <complex.h>
 #include <sys/types.h>
 
-typedef u_quad_t hashcode;
+typedef u_int64_t hashcode;
 typedef _Complex double cdouble;
 
 typedef struct {
-   long long size;
+   u_int64_t size;
    double granularity;
    cdouble*set;
 } kpointset;
-inline hashcode hash_kpointset(kpointset*sp);
+hashcode hash_kpointset(kpointset*sp);
 
 #endif //KODA_KODAT_H
