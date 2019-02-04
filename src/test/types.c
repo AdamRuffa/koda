@@ -29,9 +29,9 @@ START_TEST(kpointset_hash_granularity_test) {
         left.set[i] = i + i*I;
         right.set[i] = i + i*I;
     }
-    if(debug) printf("%llu %llu\n", hash_kpointset(&left), hash_kpointset(&right));
-    hashcode l = hash_kpointset(&left),
-             r = hash_kpointset(&right);
+    if(debug) printf("%llu %llu\n", khash(&left), khash(&right));
+    hashcode l = khash(&left),
+             r = khash(&right);
     ck_assert(l != r);
 } END_TEST
 
@@ -53,9 +53,9 @@ START_TEST(kpointset_hash_data_difference_test) {
         left.set[i] = i + i*I;
         right.set[i] = i;
     }
-    if(debug) printf("%llu %llu\n", hash_kpointset(&left), hash_kpointset(&right));
-    hashcode l = hash_kpointset(&left),
-            r = hash_kpointset(&right);
+    if(debug) printf("%llu %llu\n", khash(&left), khash(&right));
+    hashcode l = khash(&left),
+            r = khash(&right);
     ck_assert(l != r);
 } END_TEST
 
@@ -80,12 +80,12 @@ START_TEST(kpointset_hash_size_test) {
     for(int i = 16; i < 32; i++) {
         right.set[i] = i + i*I;
     }
-    if(debug) printf("%llu %llu\n", hash_kpointset(&left), hash_kpointset(&right));
-    hashcode l = hash_kpointset(&left),
-            r = hash_kpointset(&right);
+    if(debug) printf("%llu %llu\n", khash(&left), khash(&right));
+    hashcode l = khash(&left),
+            r = khash(&right);
     ck_assert(l != r);
-} END_TEST
-
+} END_TESTF
+F
 Suite*types_tsuite(void) {
     Suite*s = suite_create("kodatest-types");
     TCase*tc_core = tcase_create("core");
