@@ -34,8 +34,7 @@ typedef union {
 inline int pr(u_int64_t group) {
     group%=HASHPRIMES;
     int g = 0,
-        ham = __builtin_popcount(group) >> 3;
-    ham = !ham ? 1 : ham;
+        ham = log2_u64((u_int64_t)__builtin_popcount(group))|0x1;
     for(int i = 0; i < ham; i++) {
         g ^= hashprimes[group + ((i*31)%HASHPRIMES)];
     }
