@@ -2,16 +2,23 @@
 // Created by Adam on 2019-02-03.
 //
 
-#include <printf.h>
+#include <stdio.h>
 #include <check.h>
 #include <stdlib.h>
 #include "../koda/math/kmath.h"
 
 START_TEST(dx_test) {
-    double c[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-    dx(c, 16);
+    kpointset c = {
+        16,
+        1.0,
+        calloc(16, sizeof(_Complex double))
+    };
     for(int i = 0; i < 16; i++) {
-        ck_assert(c[i] == (!i?0:1));
+        c.set[i] = i + i*I;
+    }
+    dx(&c, ORIGINAL_GRANULARITY);
+    for(int i = 0; i < 16; i++) {
+        ck_assert(c.set[i] == (!i?0:(1+I)));
     }
 } END_TEST
 

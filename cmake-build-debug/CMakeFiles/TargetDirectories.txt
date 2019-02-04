@@ -1,0 +1,4 @@
+/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/unittest-koda.dir
+/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/adam/CLionProjects/koda/cmake-build-debug/CMakeFiles/koda.dir

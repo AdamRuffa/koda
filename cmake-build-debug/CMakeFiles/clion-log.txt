@@ -1,0 +1,5 @@
+"/Users/adam/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" /Users/adam/CLionProjects/koda
+-- Using Check 0.12.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/adam/CLionProjects/koda/cmake-build-debug

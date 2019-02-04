@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkoda.a  CMakeFiles/koda.dir/src/koda/math/calc.c.o
+/usr/bin/ranlib libkoda.a
