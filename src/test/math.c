@@ -8,10 +8,11 @@
 #include "../koda/math/kmath.h"
 
 START_TEST(dx_test) {
+    cdouble set[16];
     kpointset c = {
         16,
         1.0,
-        calloc(16, sizeof(cdouble))
+        set
     };
     for(int i = 0; i < 16; i++) {
         c.set[i] = i + i*I;

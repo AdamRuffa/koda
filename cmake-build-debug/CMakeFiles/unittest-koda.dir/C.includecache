@@ -16,14 +16,12 @@ complex.h
 sys/types.h
 -
 
-/Users/adam/CLionProjects/koda/src/test/types.c
+/Users/adam/CLionProjects/koda/src/test/math.c
 stdio.h
 -
 check.h
 -
 stdlib.h
--
-stdbool.h
 -
 ../koda/math/kmath.h
 /Users/adam/CLionProjects/koda/src/koda/math/kmath.h

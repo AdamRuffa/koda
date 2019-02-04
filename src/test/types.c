@@ -11,41 +11,43 @@
 /* manually toggle to print exact hashcodes */
 const bool debug = true;
 
-void after(kpointset*l, kpointset*r) {
-    free(l->set);
-    free(r->set);
-}
-
 START_TEST(kpointset_hash_granularity_test) {
+    cdouble lset[16];
+    cdouble rset[16];
+
     kpointset left = {
         16,
         1.0,
-        calloc(16, sizeof(cdouble))
+        lset
     };
     kpointset right = {
         16,
         1.1,
-        calloc(16, sizeof(cdouble))
+        rset
     };
     for(int i = 0; i < 16; i++) {
         left.set[i] = i + i*I;
         right.set[i] = i + i*I;
     }
     if(debug) printf("%llu %llu\n", hash_kpointset(&left), hash_kpointset(&right));
-    ck_assert(hash_kpointset(&left) != hash_kpointset(&right));
-    after(&left, &right);
+    hashcode l = hash_kpointset(&left),
+             r = hash_kpointset(&right);
+    ck_assert(l != r);
 } END_TEST
 
 START_TEST(kpointset_hash_size_test) {
+    cdouble lset[17];
+    cdouble rset[16];
+
     kpointset left = {
             16,
             1.0,
-            calloc(16, sizeof(cdouble))
+            lset
     };
     kpointset right = {
             17,
             1.0,
-            calloc(16, sizeof(cdouble))
+            rset
     };
     for(int i = 0; i < 16; i++) {
         left.set[i] = i + i*I;
@@ -53,8 +55,9 @@ START_TEST(kpointset_hash_size_test) {
     }
     left.set[16] = 99;
     if(debug) printf("%llu %llu\n", hash_kpointset(&left), hash_kpointset(&right));
-    ck_assert(hash_kpointset(&left) != hash_kpointset(&right));
-    after(&left, &right);
+    hashcode l = hash_kpointset(&left),
+            r = hash_kpointset(&right);
+    ck_assert(l != r);
 } END_TEST
 
 Suite*types_tsuite(void) {

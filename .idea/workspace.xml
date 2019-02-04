@@ -36,7 +36,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08756139-494d-4c17-aab0-1cdd4a306354" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/koda/types/hash.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/koda/types/hash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/src/test/math.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/src/test/math.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/src/test/types.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/unittest-koda.dir/src/test/types.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unittest-koda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unittest-koda" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/math.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/math.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/types.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/types.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -67,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/koda/types/hash.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="202">
+              <caret line="34" column="40" selection-start-line="33" selection-start-column="34" selection-end-line="34" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -109,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/math.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
               </folding>
@@ -133,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/types.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="74">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
                 <element signature="e#41#59#0" expanded="true" />
               </folding>
@@ -180,14 +185,14 @@
         <option value="$PROJECT_DIR$/src/koda/math/kmath.h" />
         <option value="$PROJECT_DIR$/src/koda/math/calc.c" />
         <option value="$PROJECT_DIR$/src/koda/types/set.c" />
-        <option value="$PROJECT_DIR$/src/test/math.c" />
         <option value="$PROJECT_DIR$/src/test/math.h" />
         <option value="$PROJECT_DIR$/src/test/types.h" />
         <option value="$PROJECT_DIR$/src/test/main.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/koda/types/kodat.h" />
-        <option value="$PROJECT_DIR$/src/test/types.c" />
         <option value="$PROJECT_DIR$/src/koda/types/hash.c" />
+        <option value="$PROJECT_DIR$/src/test/types.c" />
+        <option value="$PROJECT_DIR$/src/test/math.c" />
       </list>
     </option>
   </component>
@@ -313,7 +318,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549151780827</updated>
-      <workItem from="1549151781982" duration="14483000" />
+      <workItem from="1549151781982" duration="15110000" />
     </task>
     <task id="LOCAL-00001" summary="basic setup; using lcheck for unit testing">
       <created>1549236317931</created>
@@ -326,7 +331,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14483000" />
+    <option name="totallyTimeSpent" value="15110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,16 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/math.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/types.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -530,20 +525,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/koda/types/hash.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="34" column="40" selection-start-line="33" selection-start-column="34" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/types.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="74">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
             <element signature="e#41#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/koda/types/hash.c">
+    <entry file="file://$PROJECT_DIR$/src/test/math.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
