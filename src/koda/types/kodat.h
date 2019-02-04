@@ -11,6 +11,8 @@
 typedef u_int64_t hashcode;
 typedef _Complex double cdouble;
 
+#define khash(hashable) hash_##hashable(hashable)
+
 typedef struct {
    u_int64_t size;
    double granularity;
